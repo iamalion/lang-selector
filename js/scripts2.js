@@ -3,15 +3,22 @@ let form = document.getElementById("mainForm");
 form.addEventListener("submit", function(event) {
     event.preventDefault();
     function findAnswers (event) {
-    const ans1 = document.querySelector("input");
-    const ans2 = document.querySelector("input#gameID").value;
-    const ans3 = document.querySelector("input#drawID").value;
-    const ans4 = document.querySelector("input");
-    const ans5 = document.querySelector("input#gymID").value;
-    const ans6 = document.querySelector("input#artID").value;
-    const ans7 = document.querySelector("input");
-    const ans8 = document.querySelector("input#appsID").value;
-    const ans9 = document.querySelector("input#websitesID").value;
+        if (ans1.checked && ans4.checked && ans7.checked){
+            result = "JavaScript"
+        } else if (ans2 === "Gaming" && ans5 === "Gym" && ans8 === "Build Mobile Apps") {
+            result = "C#"
+        } else if (ans3 = "Drawing" && ans6 ==="Art" && ans9 === "Create Websites") {
+            result = "Python"
+        } else result = "Ruby"
+    const ans1 = document.getElementById("readID");
+    const ans2 = document.getElementById("gameID");
+    const ans3 = document.getElementById("mathID");
+    const ans4 = document.getElementById("input");
+    const ans5 = document.getElementById("gymID");
+    const ans6 = document.getElementById("artID");
+    const ans7 = document.getElementById("gamesID");
+    const ans8 = document.getElementById("appsID");
+    const ans9 = document.getElementById("websitesID");
     let result;
     if (ans1.checked && ans4.checked && ans7.checked){
         result = "JavaScript"
