@@ -1,18 +1,26 @@
 //Business logic
-let js = 0
-let csharp = 0
-let css = 0
+let js = 1
+let csharp = 2
+let css = 3
+
+function addUp (num1,num2,num3,num4,num5,num6,num7,num8,num9){
+    return (num1+num2+num3+num4+num5+num6+num7+num8+num9)
+}
+
 
 //UI logic
-function quiz(event) {
+function addAnswers(event) {
     event.preventDefault();
-    const hobbies1 = parseInt(document.querySelector("input#readID").value);
-    const hobbies2 = parseInt(document.querySelector("input#gameID").value);
-    const hobbies3 = parseInt(document.querySelector("input#drawID").value);
-    const school1 = parseInt(document.querySelector("input#mathID").value);
-    const school2 = parseInt(document.querySelector("input#gymID").value);
-    const school3 = parseInt(document.querySelector("input#artID").value);
-    const skills1 = parseInt(document.querySelector("input#readID").value);
-    const skills2 = parseInt(document.querySelector("input#gameID").value);
-    const skills3 = parseInt(document.querySelector("input#drawID").value);
+    const ans1 = parseInt(document.querySelector("input#readID").value);
+    const ans2 = parseInt(document.querySelector("input#gameID").value);
+    const ans3 = parseInt(document.querySelector("input#drawID").value);
+    const ans4 = parseInt(document.querySelector("input#mathID").value);
+    const ans5 = parseInt(document.querySelector("input#gymID").value);
+    const ans6 = parseInt(document.querySelector("input#artID").value);
+    const ans7 = parseInt(document.querySelector("input#gamesID").value);
+    const ans8 = parseInt(document.querySelector("input#appsID").value);
+    const ans9 = parseInt(document.querySelector("input#websitesID").value);
+    let result; 
+    result = addUP(ans1,ans2,ans3,ans4,ans5,ans6,ans7,ans8,ans9);
+    document.getElementById("output").innerText = result
 }
