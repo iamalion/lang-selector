@@ -1,20 +1,19 @@
 
 let form = document.getElementById("mainForm");
-form.addEventListener("submit", function(event){
-
-function findAnswers (event) {
+form.addEventListener("submit", function(event) {
     event.preventDefault();
-    const ans1 = parseInt(document.querySelector("input#readID").value);
-    const ans2 = parseInt(document.querySelector("input#gameID").value);
-    const ans3 = parseInt(document.querySelector("input#drawID").value);
-    const ans4 = parseInt(document.querySelector("input#mathID").value);
-    const ans5 = parseInt(document.querySelector("input#gymID").value);
-    const ans6 = parseInt(document.querySelector("input#artID").value);
-    const ans7 = parseInt(document.querySelector("input#gamesID").value);
-    const ans8 = parseInt(document.querySelector("input#appsID").value);
-    const ans9 = parseInt(document.querySelector("input#websitesID").value);
+    function findAnswers (event) {
+    const ans1 = document.querySelector("input");
+    const ans2 = document.querySelector("input#gameID").value;
+    const ans3 = document.querySelector("input#drawID").value;
+    const ans4 = document.querySelector("input");
+    const ans5 = document.querySelector("input#gymID").value;
+    const ans6 = document.querySelector("input#artID").value;
+    const ans7 = document.querySelector("input");
+    const ans8 = document.querySelector("input#appsID").value;
+    const ans9 = document.querySelector("input#websitesID").value;
     let result;
-    if (ans1 === "Reading" && ans4 === "Math" && ans7 === "Make Games"){
+    if (ans1.checked && ans4.checked && ans7.checked){
         result = "JavaScript"
     } else if (ans2 === "Gaming" && ans5 === "Gym" && ans8 === "Build Mobile Apps") {
         result = "C#"
@@ -22,7 +21,7 @@ function findAnswers (event) {
         result = "Python"
     } else result = "Ruby"
     
-    document.getElementById("output").textContent = result
+    document.getElementById("output").textContent = "Your recommended language is" + result
 }
 })
 window.addEventListener("load", function () {
