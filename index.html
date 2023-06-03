@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="css/styles.css" rel="styleshet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair:wght@300;900&family=Varela+Round&display=swap" rel="stylesheet">
     <script src="js/scripts2.js"></script>
     <title>Language Selector</title>
 </head>
@@ -11,7 +14,7 @@
     <h1>Which programming language is right for you?</h1>
     <p>Choosing a programming language to study can be a tough decision. Answer some simple questions and we'll tell you which one is right for you!</p>
     </div>
-    <div class="container">
+    <div class="form">
         <form id="mainForm">
             <p> First things first, what's your name?</p>
             <!-- <label for="firstName">Name</label> -->
@@ -54,18 +57,19 @@
                 <option>Make fun games</option>
                 <option>Build useful mobile apps</option>
                 <option>Create beautiful websites</option>
-            </select>
+            </select><br /><br />
             <!-- <input type="radio" name="skills" value="js" id="gamesID" checked>
             <label for="gamesID">Make Games</label><br />
             <input type="radio" name="skills" value="csharp" id="appsID" class="csharp">
             <label for="appsID">Build Mobile Apps</label><br />
             <input type="radio" name="skills" value="python" id="websitesID" class="python">
             <label for="websitesID">Create Websites</label><br />-->
-            <button type="submit" class="button" id="button">Show me my language!</button> 
+            <div class="styleBtn"><button type="submit" class="button" id="button">Show me my language!</button></div>
+             
         </form>
     </div>
-    <div class="container">
-        <h2>Results!</h2>
+    <div class="end">
+        <h2 id="results" class="hidden">Results!</h2>
         <p id="output"></p>
     </div>
      

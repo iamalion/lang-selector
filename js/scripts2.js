@@ -14,7 +14,7 @@ function findAnswers (event) {
         result = "Python"
     }
     
-    
+    document.querySelector("h2#results").removeAttribute("class")
     document.getElementById("output").innerText = "Your recommended language is " + result +"!!!"
 }
 
