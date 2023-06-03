@@ -18,7 +18,11 @@
             <input id="firstName" type="text"><br /><br />
 
             <p>And where are you from?</p>
-            <select id="dropdown" name="state">
+            <input type="radio" name="earthName" value="earthVal" id="earthID" checked>
+            <label for="earthID">Earth</label>
+            <input type="radio" name="alienName" value="alienVal" id="alienID">
+            <lavel for="alienID">I'm an alien!</lavel>
+            <!-- <select id="dropdown" name="state">
                 <option value="" disable selected hidden></option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
@@ -71,32 +75,47 @@
                 <option value="WV">West Virginia</option>
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
-            </select><br /><br />
+            </select><br /><br /> -->
 
             <p>What is your favorite hobby?</p>
-            <input type="radio" name="hobbies" value="js" id="readID" checked>
+            <select id="hobbyID">
+                <option>Reading</option>
+                <option>Gaming</option>
+                <option>Drawing</option>
+            </select>
+            <!-- <input type="radio" name="hobbies" value="js" id="readID" checked>
             <label for="readID">Reading</label><br />
             <input type="radio" name="hobbies" value="csharp" id="gameID">
             <label for="gameID">Gaming</label><br />
             <input type="radio" name="hobbies" value="python" id="drawID">
-            <label for="drawID">Drawing</label><br /><br />
+            <label for="drawID">Drawing</label><br /><br /> -->
 
             <p>What is/was your favorite subject in school?</p>
-            <input type="radio" name="school" value="js" id="mathID" checked>
+            <select id="schoolID">
+                <option>Math</option>
+                <option>Gym</option>
+                <option>Art</option>
+            </select>
+            <!-- <input type="radio" name="school" value="js" id="mathID" checked>
             <label for="mathID">Math</label><br />
             <input type="radio" name="school" value="csharp" id="gymID">
             <label for="gymID">Gym</label><br />
             <input type="radio" name="school" value="python" id="artID">
-            <label for="artID">Art</label><br /><br />
+            <label for="artID">Art</label><br /><br /> -->
 
             <p>And last, what do you want to do with your coding skills?</p>
-            <input type="radio" name="skills" value="js" id="gamesID" checked>
+            <select id="skillsID">
+                <option>Make fun games</option>
+                <option>Build useful mobile apps</option>
+                <option>Create beautiful websites</option>
+            </select>
+            <!-- <input type="radio" name="skills" value="js" id="gamesID" checked>
             <label for="gamesID">Make Games</label><br />
             <input type="radio" name="skills" value="csharp" id="appsID" class="csharp">
             <label for="appsID">Build Mobile Apps</label><br />
             <input type="radio" name="skills" value="python" id="websitesID" class="python">
-            <label for="websitesID">Create Websites</label><br />
-            <button type="submit" class="button" id="button">Show me my language!</button>
+            <label for="websitesID">Create Websites</label><br />-->
+            <button type="submit" class="button" id="button">Show me my language!</button> 
         </form>
     </div>
     <div class="container">
