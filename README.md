@@ -1,8 +1,10 @@
-# Lindsay Warr Portfolio
+# Which programming language is right for you?
 
 #### By _**Lindsay Warr**_
 
-#### An input form Link to GitHub page found here: link_placeholder
+#### Description
+A simple input form. 
+Link to GitHub page found here: https://iamalion.github.io/lang-selector/link_placeholder
 
 ## Technologies Used
 
@@ -15,17 +17,17 @@
 
 This was created for the week 2 project at Epicodus. It is a survey designed to take input from a user and give different answers depending on their responses.
 
-## Setup/Installation Requirements
+## Setup/Installation Requirements 
 
 * Clone this repository
 * Open in VS Code 
 * Use "Go Live" to see in your browser
 
-_Alternatively, visit the static page at_
+_Alternatively, visit the static page at https://iamalion.github.io/lang-selector/_
 
 ## Known Bugs
 
-* nothing works
+* none at this time
 
 ## License
 
