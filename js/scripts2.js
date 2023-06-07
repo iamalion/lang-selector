@@ -16,8 +16,11 @@ function findAnswers (event) {
     
     document.querySelector("h2#results").removeAttribute("class")
     document.getElementById("output").innerText = "Your recommended language is " + result +"!!!"
+}   
+function nameGrabber (){
+    const name = document.getElementById("nameID").value;
+    document.getElementById("nameID").innerText = name
 }
-
 window.addEventListener("load", function () {
     const form = document.getElementById("mainForm");
     form.addEventListener("submit", findAnswers)

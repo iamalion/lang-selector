@@ -17,7 +17,7 @@
     <div class="form">
         <form id="mainForm">
             <p> First things first, what's your name?</p>
-            <!-- <label for="firstName">Name</label> -->
+            
             <input id="firstName" type="text"><br /><br />
 
             <p>And where are you from?</p>
@@ -32,12 +32,6 @@
                 <option>Gaming</option>
                 <option>Drawing</option>
             </select>
-            <!-- <input type="radio" name="hobbies" value="js" id="readID" checked>
-            <label for="readID">Reading</label><br />
-            <input type="radio" name="hobbies" value="csharp" id="gameID">
-            <label for="gameID">Gaming</label><br />
-            <input type="radio" name="hobbies" value="python" id="drawID">
-            <label for="drawID">Drawing</label><br /><br /> -->
 
             <p>What is/was your favorite subject in school?</p>
             <select id="schoolID">
@@ -45,12 +39,6 @@
                 <option>Gym</option>
                 <option>Art</option>
             </select>
-            <!-- <input type="radio" name="school" value="js" id="mathID" checked>
-            <label for="mathID">Math</label><br />
-            <input type="radio" name="school" value="csharp" id="gymID">
-            <label for="gymID">Gym</label><br />
-            <input type="radio" name="school" value="python" id="artID">
-            <label for="artID">Art</label><br /><br /> -->
 
             <p>And last, what do you want to do with your coding skills?</p>
             <select id="skillsID">
@@ -58,18 +46,13 @@
                 <option>Build useful mobile apps</option>
                 <option>Create beautiful websites</option>
             </select><br /><br />
-            <!-- <input type="radio" name="skills" value="js" id="gamesID" checked>
-            <label for="gamesID">Make Games</label><br />
-            <input type="radio" name="skills" value="csharp" id="appsID" class="csharp">
-            <label for="appsID">Build Mobile Apps</label><br />
-            <input type="radio" name="skills" value="python" id="websitesID" class="python">
-            <label for="websitesID">Create Websites</label><br />-->
+            
             <div class="styleBtn"><button type="submit" class="button" id="button">Show me my language!</button></div>
              
         </form>
     </div>
     <div class="end">
-        <h2 id="results" class="hidden">Results!</h2>
+        <h2 id="results" class="hidden">Results for <span id="nameID"></span></h2>
         <p id="output"></p>
     </div>
      
