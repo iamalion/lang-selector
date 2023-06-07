@@ -4,7 +4,7 @@
 
 #### Description
 A simple input form. 
-Link to GitHub page found here: https://iamalion.github.io/lang-selector/link_placeholder
+Link to GitHub page found here: https://iamalion.github.io/lang-selector/
 
 ## Technologies Used
 
