@@ -21,4 +21,5 @@ function findAnswers (event) {
 window.addEventListener("load", function () {
     const form = document.getElementById("mainForm");
     form.addEventListener("submit", findAnswers)
+    
 })
